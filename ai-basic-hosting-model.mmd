@@ -23,7 +23,7 @@ sequenceDiagram
     Note over LLM: Tokenize, Vectorize as needed
     Note over LLM: Your chosen LLM model <br/>∑ generates next token 🔁<br/>applying Temperature & Top-p values
     LLM->>CF: Response(s)
-    Note over CF: ✅❌ Reponse safety check
+    Note over CF: ✅❌ Response safety check
     Note over CF: $$ Response token accounting
     CF->>API: Response(s)
     API->>CS: Response(s) (text, media) + <br/>context (e.g., token usage)
