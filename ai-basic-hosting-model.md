@@ -1,6 +1,6 @@
-# Basic Hosted AI Service Interaction Model
+# Illustrating _The Prompt's Journey_ to and from the LLM
 
-Demonstrate high-level logical flow to highlight some key concepts.
+Scenario is an LLM hosted by Microsoft Azure AI Foundry and accessible via API, but conceptually same as OpenAI and other big AI hosts. Demonstrate high-level logical flow of the Prompt through all of its adventures to highlight some key concepts.
 
 ```mermaid
 sequenceDiagram
