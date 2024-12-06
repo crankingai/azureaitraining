@@ -52,3 +52,9 @@ OpenAIPromptExecutionSettings settings = new ()
 var response = await kernel.InvokePromptAsync("Draft HTML page using at least one image on topic X", settings);
 // behind the scenes the LLM decides which functions to call, and calls them, to solve problem described in prompt
 ```
+
+## Each Function Might Choose a Different LLM
+
+Big deal! Maybe I have a _native function_ that counts customers in photo. Maybe that uses a diffent model hosted by Google that's really good at that.
+
+Prompty and Semantic Kernel file-based prompts storage formats supports specifying the LLM.
