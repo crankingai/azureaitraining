@@ -4,7 +4,7 @@ LLMs have assorted limitations on how much data they can process in one shot. On
 which is the overall number of tokens available for a single inference request.
 
 The number of tokens consumed by the prompt is implied - you don't specify it separately, 
-but rather you send in the prompt and that prompt is made up of a certain number of tokens.
+but rather you send in the prompt and that prompt is innately made up of a certain number of tokens.
 
 You get to specify a cap on the number of tokens consumed in the response - this is MaxTokens, a value typically
 transmitted alongside the prompt, temperature, and other response-impacting values.
