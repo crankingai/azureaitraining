@@ -18,6 +18,10 @@ the number of tokens allowed in the context window.
 
 Chat history: unmanaged accumulated chat history can consume a lot of your context window, eventually overflowing it. There are patterns for compressing this.
 
+See the **Tip** in this screen grabbed from a long-running session with Claude 3.5 Sonnet that supports this point.
+<img width="689" alt="image" src="https://github.com/user-attachments/assets/38484ffe-aaf0-4a29-9508-0e665ec48bd1" />
+
+
 Cost: if you are paying by the token, token use and spend are correlated.
 
 Latency: does an LLM take longer to process a larger context window?
