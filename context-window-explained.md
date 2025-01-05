@@ -30,6 +30,8 @@ Accuracy: does a larger context window equally account for all of its content?
 
 ## Examples: Context Window = 32,000 tokens
 
+While this diagram is focused on the context window, notably the `MaxTokens` value caps the sum of the tokens in the response(s) received back from the LLM and any "reasoning tokens" (as described in [OpenAI model documentation](https://platform.openai.com/docs/models)) used for processing.
+
 ```mermaid
 flowchart TD
     Title[/"**Context Window: 32,000 tokens**"/]
