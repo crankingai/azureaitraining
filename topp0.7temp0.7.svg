@@ -4,11 +4,10 @@
   
   <!-- Definitions for gradients and clips -->
   <defs>
-    <!-- Gradient for temperature section - more intense for T=0.25 -->
+    <!-- Gradient for temperature section -->
     <linearGradient id="temperatureGradient" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" style="stop-color:rgba(0,0,255,0)"/>
-      <stop offset="70%" style="stop-color:rgba(0,0,255,0.1)"/>
-      <stop offset="100%" style="stop-color:rgba(0,0,255,0.6)"/>
+      <stop offset="100%" style="stop-color:rgba(0,0,255,0.3)"/>
     </linearGradient>
     <!-- Clip path for the cone -->
     <clipPath id="conePath">
@@ -56,5 +55,5 @@
   <line x1="60" y1="140" x2="80" y2="140" stroke="black" stroke-width="2" stroke-dasharray="5,5"/>
   
   <!-- Temperature label -->
-  <text x="205" y="203" text-anchor="start" dominant-baseline="middle">T=0.25</text>
+  <text x="205" y="203" text-anchor="start" dominant-baseline="middle">T=0.7</text>
 </svg>
