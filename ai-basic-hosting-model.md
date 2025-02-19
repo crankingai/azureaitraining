@@ -35,3 +35,17 @@ sequenceDiagram
 
     %% original: https://github.com/crankingai/azureaitraining/ai-basic-hosting-model.md
 ```
+
+For quota management at the API call level, the [documentation for Azure Open AI](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/quota?tabs=rest#understanding-rate-limits:~:text=As%20each%20request,the%20counter%20resets.) states:
+
+_As each request is received, Azure OpenAI computes an estimated max processed-token count that includes the following:_
+
+* _Prompt text and count_
+* _The max_tokens parameter setting_
+* _The best_of parameter setting_
+
+_As requests come into the deployment endpoint, the estimated max-processed-token count is added to a running token count of all requests that is reset each minute. If at any time during that minute, the TPM rate limit value is reached, then further requests will receive a 429 response code until the counter resets._
+
+And has this note related the accounting:
+
+<img width="930" alt="image" src="https://github.com/user-attachments/assets/afe015f9-b907-45f1-beeb-052faac40f4b" />
