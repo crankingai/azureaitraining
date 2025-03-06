@@ -16,6 +16,11 @@ Where:
 - FN = False Negatives (positive cases incorrectly predicted as negative)
 - FP = False Positives (negative cases incorrectly predicted as positive)
 
+Intuition:
+
+* A Recall score of 100% means: we didn't miss any positives = no True Positives were _missed_ = no False Negatives.
+* A Precision score of 100% means there were no False Positives.
+
 ## Example - Email Spam Prediction
 
 Imagine we're building a model to detect spam emails.  We have a test set of 100 emails, and our model makes the following predictions:
