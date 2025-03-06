@@ -34,11 +34,11 @@ From this table (called a *confusion matrix*), we can calculate TP, FP, FN, and 
 
 Now, let's calculate the metrics:
 
-* **Recall:**  $$\frac{TP}{TP + FN} = \frac{40}{40 + 10} = \frac{40}{50} = 0.8 \text{ or } 80\%$$  The model correctly identified 80% of the actual spam emails.
+* **Recall:**  $$\frac{TP}{TP + FN} = \frac{40}{40 + 10} = \frac{40}{50} = 0.8 \text{ or } 80\%$$ &mdash; The model correctly identified 80% of the actual spam emails.
 
-* **Precision:** $$\frac{TP}{TP + FP} = \frac{40}{40 + 5} = \frac{40}{45} \approx 0.89 \text{ or } 89\%$$  When the model predicted an email as spam, it was correct about 89% of the time.
+* **Precision:** $$\frac{TP}{TP + FP} = \frac{40}{40 + 5} = \frac{40}{45} \approx 0.89 \text{ or } 89\%$$ &mdash; When the model predicted an email as spam, it was correct about 89% of the time.
 
-* **F1 Score:** $$2 \times \frac{precision \times recall}{precision + recall} = 2 \times \frac{0.89 \times 0.8}{0.89 + 0.8} \approx 0.84$$  The F1-score provides a balanced measure, considering both precision and recall.
+* **F1 Score:** $$2 \times \frac{precision \times recall}{precision + recall} = 2 \times \frac{0.89 \times 0.8}{0.89 + 0.8} \approx 0.84$$ &mdash; The F1-score provides a balanced measure, considering both precision and recall.
 
 This example shows how the metrics are calculated and what they tell us about the model's performance.  A high recall means the model is good at finding most of the actual positive cases (spam in this example), while high precision means the model is good at not falsely predicting negative cases as positive (not flagging legitimate emails as spam). The F1-score helps balance these two aspects.
 
