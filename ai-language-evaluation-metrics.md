@@ -47,3 +47,6 @@ Now, let's calculate the metrics:
 
 This example shows how the metrics are calculated and what they tell us about the model's performance.  A high recall means the model is good at finding most of the actual positive cases (spam in this example), while high precision means the model is good at not falsely predicting negative cases as positive (not flagging legitimate emails as spam). The F1-score helps balance these two aspects.
 
+## Further Reading
+
+Microsoft **AI Language Services** ⬥ [Evaluation metrics for Custom Text Classification from Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/concepts/evaluation-metrics)
