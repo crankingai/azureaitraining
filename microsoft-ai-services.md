@@ -22,8 +22,8 @@ Microsoft has been gradually deprecating older services like LUIS and QnA Maker 
 | **Bing Chat** | Newest | GPT-4 with customizations | Consumer-facing service using advanced LLMs |
 | **Microsoft Copilot for Microsoft 365** | Newest | GPT-4 with customizations | Enterprise productivity offering |
 | **Azure AI Search** (formerly Cognitive Search) | Evolved | Information Retrieval + LLM integration options | Can be integrated with LLMs for RAG patterns |
-| **Text Analytics** | Evolved | ML models with GPT enhancement options | Original features used ML, newer ones leverage LLMs |
-| **Speech Services** | Evolved | Neural networks (not LLM-based) with newer LLM options | Original features used neural networks, newer ones may leverage LLMs |
+| **[Azure AI Language Services](https://learn.microsoft.com/en-us/azure/ai-services/language-service/)** | Evolved | ML models with GPT enhancement options | Original features used ML, newer ones leverage LLMs. Encompasses Text Analytics alongside other natural language processing (NLP) capabilities, replacing older standalone services like LUIS and QnA Maker68. |
+| **[Azure AI Speech Services](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)** | Evolved | Neural networks (not LLM-based) with newer LLM options | Original features used neural networks, newer ones may leverage LLMs |
 
 ## Key Transition Points
 
