@@ -49,4 +49,5 @@ This example shows how the metrics are calculated and what they tell us about th
 
 ## Further Reading
 
-Microsoft **AI Language Services** ⬥ [Evaluation metrics for Custom Text Classification from Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/concepts/evaluation-metrics)
+* Microsoft **Azure AI Language** ⬥ [Evaluation metrics for Custom Text Classification from Microsoft Learn](https://learn.microsoft.com/en-us/azure/ai-services/language-service/custom-text-classification/concepts/evaluation-metrics)
+* Microsoft **Azure AI Language** ⬥ [Overview](https://learn.microsoft.com/en-us/azure/ai-services/language-service/)
