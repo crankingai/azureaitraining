@@ -23,7 +23,8 @@ Microsoft has been gradually deprecating older services like LUIS and QnA Maker 
 | **Microsoft Copilot for Microsoft 365** | Newest | GPT-4 with customizations | Enterprise productivity offering |
 | **Azure AI Search** (formerly Cognitive Search) | Evolved | Information Retrieval + LLM integration options | Can be integrated with LLMs for RAG patterns |
 | **[Azure AI Language Services](https://learn.microsoft.com/en-us/azure/ai-services/language-service/)** | Evolved | ML models with GPT enhancement options | Original features used ML, newer ones leverage LLMs. Encompasses Text Analytics alongside other natural language processing (NLP) capabilities, replacing older standalone services like LUIS and QnA Maker68. |
-| **[Azure AI Speech Services](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)** | Evolved | Neural networks (not LLM-based) with newer LLM options | Original features used neural networks, newer ones may leverage LLMs |
+| **[Azure AI Speech Services](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/)** | Evolved | Neural networks (not LLM-based) with newer LLM options | Original features used neural networks, newer ones may leverage LLMs. Speech Synthesis services support [Speech Synthesis Markup Language (SSML)](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup), though it
+is not required. |
 
 ## Key Transition Points
 
