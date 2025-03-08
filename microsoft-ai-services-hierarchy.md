@@ -4,7 +4,7 @@
 
 ## Overview
 
-This table provides a hierarchical view of Microsoft's AI services, 
+This table provides a hierarchical view of [Microsoft's AI services](https://azure.microsoft.com/en-us/solutions/ai), 
 showing the evolution from specialized ML models to more generalized large language models. 
 Services are organized by category with umbrella services expanded to show their complete offerings.
 
