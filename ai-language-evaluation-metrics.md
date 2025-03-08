@@ -7,8 +7,8 @@
 
 | Metric   | Formula | Description |
 |----------|------------| ----------- |
-| **Recall**<br>_Effectiveness in avoiding false negatives. 1.0 → no false negatives (FN = 0)._ | $$\frac{TP}{TP + FN}$$ | Measures the proportion of actual positive cases that were correctly identified by the model. Indicates how comprehensive the model is at finding all relevant instances. |
-| **Precision**<br>_Effectiveness in avoiding false positives. 1.0 → no false positives (FP = 0)._ | $$\frac{TP}{TP + FP}$$ | Measures the proportion of predicted positive cases that were actually positive. Indicates how accurate the model is when it predicts a positive result. |
+| **Recall**<br>_Effectiveness in avoiding false negatives. 1.0 → no false negatives (FN = 0)_ → **no misses.** | $$\frac{TP}{TP + FN}$$ | Measures the proportion of actual positive cases that were correctly identified by the model. Indicates how comprehensive the model is at finding all relevant instances. |
+| **Precision**<br>_Effectiveness in avoiding false positives. 1.0 → no false positives (FP = 0)_ → **no extras.** | $$\frac{TP}{TP + FP}$$ | Measures the proportion of predicted positive cases that were actually positive. Indicates how accurate the model is when it predicts a positive result. |
 | **F1 Score**<br>_Effectiveness in avoiding false negatives and false positives. 1.0 → no false negatives and no false positives (FN = FP = 0)._| $$2 \times \frac{precision \times recall}{precision + recall} = \frac{2TP}{2TP + FP + FN}$$ | The harmonic mean of precision and recall, providing a single balanced metric that gives equal weight to both false positives and false negatives. Particularly useful when the class distribution is imbalanced. |
 
 Where:
