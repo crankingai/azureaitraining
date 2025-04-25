@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Closeness of A and B, B and C, is not transitive to A and C -->
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Semantic closeness of A and B, B and C, is not transitive to A and C</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-style="italic">Line lengths proportional to (1 - similarity)</text>
+  
+  <!-- Center point for our layout -->
+  <circle cx="400" cy="300" r="2" fill="#999999" opacity="0.5"/>
+  
+  <!-- Calculate positions based on similarity 
+       Using (1 - similarity) * scaling_factor for distances
+       doctor-dr: 1-0.68 = 0.32
+       doctor-physician: 1-0.64 = 0.36
+       dr-physician: 1-0.42 = 0.58
+       
+       Using a scaling factor of 300 to make differences visible
+  -->
+  
+  <!-- Node circles -->
+  <circle cx="400" cy="200" r="50" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <circle cx="280" cy="330" r="50" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  <circle cx="520" cy="350" r="50" fill="#e6f7ff" stroke="#0099cc" stroke-width="2"/>
+  
+  <!-- Node labels -->
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">doctor</text>
+  <text x="280" y="335" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">dr</text>
+  <text x="520" y="355" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" font-weight="bold">physician</text>
+  
+  <!-- Connection lines with similarity scores -->
+  <!-- doctor to dr connection (similarity 0.68) -->
+  <line x1="370" y1="240" x2="310" y2="300" stroke="#0099cc" stroke-width="4" opacity="0.8"/>
+  <rect x="330" y="260" width="55" height="25" rx="5" ry="5" fill="white" stroke="#0099cc" stroke-width="1"/>
+  <text x="357" y="277" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">0.68</text>
+  
+  <!-- doctor to physician connection (similarity 0.64) -->
+  <line x1="430" y1="240" x2="500" y2="310" stroke="#0099cc" stroke-width="4" opacity="0.7"/>
+  <rect x="455" y="265" width="55" height="25" rx="5" ry="5" fill="white" stroke="#0099cc" stroke-width="1"/>
+  <text x="482" y="282" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">0.64</text>
+  
+  <!-- dr to physician connection (similarity 0.42) - longer distance -->
+  <line x1="330" y1="330" x2="470" y2="350" stroke="#0099cc" stroke-width="2" opacity="0.4" stroke-dasharray="5,3"/>
+  <rect x="390" y="355" width="55" height="25" rx="5" ry="5" fill="white" stroke="#0099cc" stroke-width="1"/>
+  <text x="417" y="372" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">0.42</text>
+  
+  <!-- Expected transitive relationship annotation -->
+  <rect x="150" y="420" width="500" height="45" fill="#fff8e6" stroke="#d4b87b" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Expected if transitive: ~0.66</text>
+  <text x="400" y="460" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Actual: 0.42 (significant non-transitivity)</text>
+  
+  <!-- Distance formula explanation -->
+  <rect x="150" y="480" width="500" height="80" fill="white" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Distance Formula</text>
+  <text x="400" y="525" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Line Length ∝ (1 - Cosine Similarity)</text>
+  <text x="400" y="545" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Higher similarity = Shorter distance</text>
+  
+  <!-- Legend -->
+  <rect x="580" y="500" width="180" height="80" fill="white" stroke="#333333" stroke-width="1" rx="5" ry="5"/>
+  <text x="670" y="520" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Line Style</text>
+  <line x1="600" y1="535" x2="650" y2="535" stroke="#0099cc" stroke-width="4"/>
+  <text x="680" y="540" font-family="Arial, sans-serif" font-size="12" text-anchor="start">High Similarity</text>
+  <line x1="600" y1="555" x2="650" y2="555" stroke="#0099cc" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="680" y="560" font-family="Arial, sans-serif" font-size="12" text-anchor="start">Low Similarity</text>
+</svg>
