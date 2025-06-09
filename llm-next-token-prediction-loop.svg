@@ -1,0 +1,73 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f5f5f5" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">LLM Next Token Prediction Loop</text>
+  
+  <!-- Input Context Box -->
+  <rect x="50" y="80" width="700" height="80" rx="10" ry="10" fill="#e1f5fe" stroke="#01579b" stroke-width="2"/>
+  <text x="400" y="110" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">Input Context</text>
+  <text x="400" y="140" font-family="Courier New" font-size="16" text-anchor="middle">"The quick brown fox jumps over the"</text>
+  
+  <!-- LLM Brain -->
+  <ellipse cx="400" cy="230" rx="120" ry="60" fill="#b39ddb" stroke="#4527a0" stroke-width="2"/>
+  <text x="400" y="235" font-family="Arial" font-size="20" text-anchor="middle" font-weight="bold">LLM</text>
+  
+  <!-- Probability Distribution -->
+  <rect x="180" y="320" width="440" height="100" rx="10" ry="10" fill="#fff8e1" stroke="#ff6f00" stroke-width="2"/>
+  <text x="400" y="340" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Token Probability Distribution</text>
+  
+  <!-- Token probabilities -->
+  <rect x="200" y="360" width="70" height="40" rx="5" ry="5" fill="#ffcc80" stroke="#e65100" stroke-width="1.5"/>
+  <text x="235" y="385" font-family="Courier New" font-size="14" text-anchor="middle">"lazy"</text>
+  <text x="235" y="405" font-family="Arial" font-size="12" text-anchor="middle">15%</text>
+  
+  <rect x="290" y="360" width="70" height="40" rx="5" ry="5" fill="#a5d6a7" stroke="#2e7d32" stroke-width="2.5"/>
+  <text x="325" y="385" font-family="Courier New" font-size="14" text-anchor="middle" font-weight="bold">"lazy"</text>
+  <text x="325" y="405" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">60%</text>
+  
+  <rect x="380" y="360" width="70" height="40" rx="5" ry="5" fill="#ffcc80" stroke="#e65100" stroke-width="1.5"/>
+  <text x="415" y="385" font-family="Courier New" font-size="14" text-anchor="middle">"happy"</text>
+  <text x="415" y="405" font-family="Arial" font-size="12" text-anchor="middle">10%</text>
+  
+  <rect x="470" y="360" width="70" height="40" rx="5" ry="5" fill="#ffcc80" stroke="#e65100" stroke-width="1.5"/>
+  <text x="505" y="385" font-family="Courier New" font-size="14" text-anchor="middle">"red"</text>
+  <text x="505" y="405" font-family="Arial" font-size="12" text-anchor="middle">8%</text>
+  
+  <!-- Output -->
+  <rect x="50" y="450" width="700" height="30" rx="5" ry="5" fill="#dcedc8" stroke="#33691e" stroke-width="2"/>
+  <text x="400" y="470" font-family="Courier New" font-size="16" text-anchor="middle">"The quick brown fox jumps over the lazy"</text>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+  
+  <!-- Context to LLM -->
+  <line x1="400" y1="160" x2="400" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- LLM to Probability -->
+  <line x1="400" y1="290" x2="400" y2="310" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Probability to Output -->
+  <line x1="325" y1="400" x2="325" y2="440" stroke="#2e7d32" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Loop Back Arrow -->
+  <path d="M 700 465 Q 750 465 750 320 Q 750 100 700 100" fill="none" stroke="#333" stroke-width="2.5" stroke-dasharray="10,5" marker-end="url(#arrowhead)"/>
+  <text x="760" y="320" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(90, 760, 320)">Loop with updated context</text>
+  
+  <!-- Process Labels -->
+  <text x="150" y="230" font-family="Arial" font-size="14" text-anchor="end" font-style="italic">1. Process input</text>
+  <text x="150" y="330" font-family="Arial" font-size="14" text-anchor="end" font-style="italic">2. Calculate probabilities</text>
+  <text x="150" y="440" font-family="Arial" font-size="14" text-anchor="end" font-style="italic">3. Select next token</text>
+  <text x="620" y="250" font-family="Arial" font-size="14" text-anchor="start" font-style="italic">4. Update context</text>
+  <text x="620" y="270" font-family="Arial" font-size="14" text-anchor="start" font-style="italic">   with new token</text>
+  
+  <!-- Loop Count -->
+  <rect x="630" y="380" width="120" height="50" rx="5" ry="5" fill="#e3f2fd" stroke="#0d47a1" stroke-width="2"/>
+  <text x="690" y="400" font-family="Arial" font-size="14" text-anchor="middle">Loop Count:</text>
+  <text x="690" y="420" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">1</text>
+</svg>
